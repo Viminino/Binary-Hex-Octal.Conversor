@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.lang.Integer;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.print("Digite o número a ser convertido: ");
+		int numero = leia.nextInt();
+		String numeroBinario = Integer.toBinaryString(numero);
+		String numeroHexa = Integer.toHexString(numero);
+		String numeroOctal = Integer.toOctalString(numero);
+		
+		System.out.println("Binário: " + numeroBinario);
+		System.out.println("Hexadecimal: " + numeroHexa.toUpperCase());
+		System.out.println("Octal: " + numeroOctal);
+	}
+}
